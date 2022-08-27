@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <section id="intro">
+<section id="intro">
     <div>
       <h1>Aravindan</h1>
       <p>Welcome to my website.</p>
@@ -30,7 +30,7 @@
         <li>アニメ</li>
       </ul>
       <div class="buttons">
-        <a href="#sakubun" class="button">Explore Linux Rice</a>
+        <a href="#linux" class="button">Explore Linux Rice</a>
       </div>
       <h1>My Projects</h1>
       <p>
@@ -40,6 +40,29 @@
       <br>
       <div class="buttons">
         <a href="#sakubun" class="button">Explore Projects</a>
+      </div>
+    </div>
+  </section>
+  <section id="linux" class="shrink">
+    <div>
+      <h1>Linux Rice</h1>
+      <p>
+        'Rice' is a word used to describe a person's linux/unix desktop, specifically the
+        customizations they've done to it. As a linux enthusiast, I've spent a lot of effort
+        trying out tons of scripts and programs to customize my desktop and make it look exactly
+        the way I want. It's always a work in progress, and keeps changing as I find new programs
+        and my tastes change, or if I get bored of something.
+      </p>
+      <div class="carousel" data-active="0">
+        <div class="prev"></div>
+        <img class="active" src="images/linux.png" alt="screenshot of my linux desktop">
+        <img src="images/neovim.png" alt="screenshot of neovim setup">
+        <img src="images/vifm.png" alt="screenshot of vifm setup">
+        <div class="next"></div>
+      </div>
+      <div class="buttons">
+        <a href="https://github.com/cubetastic33/dotfiles" class="button">Dotfiles!</a>
+        <a href="#sakubun" class="button">Next</a>
       </div>
     </div>
   </section>
@@ -131,5 +154,6 @@
       © Aravindan | 12021 <a href="https://en.wikipedia.org/wiki/Holocene_calendar">HE</a>
     </span>
   </footer>
+  <script src="scripts/main.js"></script>
 </body>
 </html>

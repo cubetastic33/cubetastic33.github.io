@@ -43,6 +43,40 @@ section {
     margin: 0;
   }
 
+  .carousel {
+    margin-top: 1.5em;
+    position: relative;
+
+    img {
+      display: none;
+      max-width: calc(100% - 2em);
+      max-height: 70vh;
+      margin: auto;
+    }
+
+    img.active {
+      display: block;
+    }
+
+    .prev, .next {
+      border: solid #fff;
+      border-width: 0 5px 5px 0;
+      cursor: pointer;
+      display: inline-block;
+      padding: 7px;
+      position: absolute;
+      top: 50%;
+      transform: rotate(-45deg);
+      right: 0;
+    }
+
+    .prev {
+      right: auto;
+      left: 0;
+      transform: rotate(135deg);
+    }
+  }
+
   .window {
     background-attachment: fixed;
     border-radius: 10px;
@@ -88,9 +122,14 @@ section {
   }
 }
 
+#linux, #linux .button {
+  background-color: #000;
+  background-image: url("/images/inspiration-geometry.png");
+}
+
 #sakubun, #sakubun .button {
   background-color: #eea0c1;
-  background-image: url(https://www.transparenttextures.com/patterns/sandpaper.png);
+  background-image: url("/images/sandpaper.png");
   color: #212121;
 
   .window {
@@ -100,7 +139,7 @@ section {
 
 #cheesecake, #cheesecake .button {
   background-color: #d81b60;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  background-image: url("/images/45-degree-fabric-light.png");
   color: #fff;
 
   .window {
