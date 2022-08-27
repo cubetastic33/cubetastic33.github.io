@@ -9,39 +9,6 @@ body {
   margin: 0;
 }
 
-nav ul {
-  background-color: #ddda;
-  border-radius: 1em;
-  color: #000;
-  display: flex;
-  position: fixed;
-  left: 50%;
-  top: 2em;
-  transform: translateX(-50%);
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-
-  .active {
-    background-color: #222;
-    color: #fff;
-    margin: -1px;
-  }
-
-  li {
-    border-radius: 1em;
-    padding: 0.5em 1.5em;
-  }
-}
-
-nav {
-  transition: opacity .3s ease-in;
-}
-
-.hide {
-  opacity: 0;
-}
-
 .buttons {
   display: flex;
   justify-content: center;
@@ -230,10 +197,6 @@ footer {
   }
 
   .buttons a:nth-child(2) {
-    display: none;
-  }
-
-  nav {
     display: none;
   }
 
